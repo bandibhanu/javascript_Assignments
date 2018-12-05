@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>
+            promt
+        </title>
+    <style type="text/css">body{margin:30px;}</style>                                                                                                                                                                                                                                                                                                                                                                              
+    </head>
+    <body>
+        <script>
+          function createtable()
+          {
+              rn=window.prompt("input number of rows",1);
+              cn=window.prompt("input number of rows",1);
+              for(var r=0;r<parseInt(rn,10);r++)
+              {
+                  var x=document.getElementById('mytable').insertRow(r);
+                  for(var c=0;c<parseInt(cn,10);c++)
+                  {
+                      var y= x.insertCell(c);
+                      y.innerHTML="Row-"+r+"Column-"+c;
+                  }
+                  }
+              }
+          
+                </script>
+                <table id="mytable"border="1"></table>
+                <form><br><br>
+                <input type="button" onclick="createtable()" value="create the table"></form>
+                
+
+                </body>
+                </html>
+            

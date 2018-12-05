@@ -5,9 +5,32 @@
         </title>
     </head>
     <body>
-        <p>press the button</p>
-   <button type="submit" onclick="promtbox()" name="button">submit</button>
-   <p id="demo"></p>
-   <script src="promt.js"></script>
+        <script>
+            var x=prompt("input 1: ");
+            var y=prompt("input 2: ");
+            var z=prompt("input 3: ");
+            if(x<=30&&y<=30&&z<=30)
+            {
+for(var i=1;i<=x;i++)
+{
+    document.write('*');
+}
+document.write('<br>');
+
+for(var i=1;i<=y;i++)
+{
+    document.write('*');
+}
+document.write('<br>');
+
+for(var i=1;i<=z;i++)
+    {
+        document.write('*');
+    }
+    document.write('<br>');
+}
+            
+
+            </script>
     </body>
-</html>
+    </html>
